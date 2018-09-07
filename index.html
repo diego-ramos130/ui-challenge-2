@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UI Challenge 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>UI Challenge - Custom Form Elements</h1>
+    </header>
+    <main>
+        <p class="instructions">This is where the instructions would usually go for this assignment.</p>
+        
+        <div class="text-entry">
+            <label for="text-input">text input w/ validation error</label>
+            <input type="text" name="text-input" id="text-input" placeholder="placeholder text" />
+            <p>please enter a valid username</p>
+        </div>
+
+        <div class="selector">
+            <label for="select-box">select box</label>
+            <select>
+                <option value="no-option" class="no-option">please select an option...</option>
+                <option value="option-1">option 1</option>
+                <option value="option-2">option 2</option>
+                <option value="option-3">option 3</option>
+                <option value="option-4">option 4</option>
+                <option value="option-5">option 5</option>
+            </select>
+        </div>
+        <div class="unchecked-box">
+            <p class="label">checkbox</p>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"></label>
+
+            <input type="checkbox" name="checkbox" id="checkbox2" />
+            <label for="checkbox2"></label>
+        </div>
+        <div class="unchecked-box">
+            <p class="label">radio</p>
+            <input type="radio" name="radio" id="radio" />
+            <label for="radio"></label>
+
+            <input type="radio" name="radio" id="radio2" />
+            <label for="radio2"></label>
+        </div>
+
+        <div class="submit-buttons">
+            <p class="label">buttons</p>
+            <a class="button">submit</a>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

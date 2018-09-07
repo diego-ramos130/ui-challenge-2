@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #404040;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    width: 80%;
+    max-width: 720px;
+    margin: 2em auto 2em auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: .75em auto;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.text-entry label, input, select, option {
+    font-size: 1.5em;
+    font-family: 'Open Sans';
+    -webkit-appearance: none;
+}
+
+.instructions {
+    line-height: 1.5;
+    margin: 2em auto;
+}
+
+label,
+.label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+input[type='text'] {
+    border: 1px solid #404040;
+    border-radius: 2px;
+    display: block;
+    padding: .5em;
+    width: 100%;
+}
+
+input.error {
+    border: 1px solid rgb(220, 0, 0);
+}
+
+.text-entry p {
+    display: none;
+}
+
+p.error {
+    display: block;
+    color: rgb(220, 0, 0);
+    float: right;
+    font-style: normal;
+    margin: 0;
+}
+
+
+
+select {
+    display: block;
+    padding: .5em;
+    width: 100%;
+}
+
+option {
+    padding: .5em;
+}
+
+option:nth-child(2n + 1) {
+    background-color: grey;
+}
+
+option:nth-child(2n) {
+    background-color: cornsilk;
+}
+
+.unchecked-box input {
+    display: none;
+}
+
+.unchecked-box label {
+    height: 100px;
+    width: 100px;
+    background-image: url('sprites.png');
+    background-size: 727px;
+}
+
+.unchecked-box label[for="checkbox"],
+.unchecked-box label[for="checkbox2"] {
+    background-position: top 210px right 180px;
+}
+
+input[type="checkbox"]:checked + label {
+    background-position: top 210px right 291px;
+}
+
+.unchecked-box label[for="radio"],
+.unchecked-box label[for="radio2"] {
+    background-position: top 210px right 390px
+}
+
+input[type="radio"]:checked + label {
+    background-position: top 210px right 505px; 
+}
+
+
+
+.button {
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 2em 1em;
+    padding: 1em 2em;
+    background-color: rgb(194, 194, 194);
+}
+
+.button:hover {
+    background-color: #404040;
+    color: white;
+}
